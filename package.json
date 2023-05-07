@@ -1,0 +1,65 @@
+{
+  "name": "@cli-dang/object",
+  "version": "2.0.3",
+  "license": "Apache-2.0",
+  "description": "Command Line Interface design framework. ESModule",
+  "type": "module",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "engines": {
+    "node": "^20"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ]
+,
+  "files": [
+    "lib",
+    "index.js",
+    "index.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:clean": "shell-script/clean_build.sh",
+    "prepublishOnly": "shell-script/prePublish.sh",
+    "t8": "npx t8 --c8='src:./src|html:|no-questions:|no-print:|all:' unit",
+    "test": "npx 4t unit",
+    "tsc-watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "trythistrythat": "3.0.9",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "oftypes": "4.0.0"
+  },
+  "keywords": [
+    "cli",
+    "framework",
+    "flags",
+    "commands",
+    "multi process"
+  ],
+  "author": {
+    "name": "Simone Del Popolo",
+    "email": "simonedelpopolo@outlook.com",
+    "url": "https://github.com/simonedelpopolo"
+  },
+  "homepage": "https://github.com/simonedelpopolo/cli-dang#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonedelpopolo/cli-dang.git"
+  },
+  "bugs": {
+    "email": "simonedelpopolo@outlook.com",
+    "url": "https://github.com/simonedelpopolo/cli-dang/issues"
+  }
+}

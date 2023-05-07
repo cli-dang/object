@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    "rootDir": "./src",
+    "outDir": "./",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "inlineSourceMap": true,
+    "removeComments": true
+  },
+  "exclude": [
+    "./node_modules/**/*",
+    "./coverage/**/*",
+  ]
+}
